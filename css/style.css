@@ -1,0 +1,8 @@
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  display:block;
+}
