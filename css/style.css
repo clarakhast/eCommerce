@@ -11,6 +11,7 @@ ul {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 50%;
+    margin-bottom: 1em;
   }
   
   td, th {
@@ -21,4 +22,16 @@ ul {
   
   tr:nth-child(even) {
     background-color: #dddddd;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    background-color:white;
+    border: 1px solid black;
+  }
+
+  button:active, button:hover {
+    background-color:black;
+    color:white;
+    cursor:pointer;
   }
