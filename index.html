@@ -10,49 +10,40 @@
 <body>
   <h1>ECommerce Checkout </h1>
 
-  <!-- <label>Pants</label>
-  <input type="button" id="minusbtn" value="-">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Unit Price</th>
+      <th>Extended Price</th>
+    </tr>
+    <tr>
+      <td>Pants</td>
+      <td>
+        <input type="button" id="minusbtn" value="-">
+        <label id="pantsQty">0</label>
+        <input type="button" id="plusbtn" value="+">
+      </td>
+      <td>$<span id="pants-price">40.99</span></td>
+      <td>$<span id="pants-total">0.00</span></td>
+    </tr>
+    <tr>
+      <td>Shirts</td>
+      <td>
+        <input type="button" id="sh-minusbtn" value="-">
+        <label id="shirtsQty">0</label>
+        <input type="button" id="sh-plusbtn" value="+">
+      </td>
+      <td>$<span id="shirts-price">10.99</span></td>
+      <td>$<span id="shirts-total">0.00</span></td>
+    </tr>
+  </table>
 
-  <label id="pantsQty">0</label>
-  <input type="button" id="plusbtn" value="+"> -->
+  <button id="submit">Calculate</button>
 
-   <form>
-    <ul>
-        <li><strong>Product</strong></li>
-        <li>Pants</li>
-        <li>Shirt</li>
-      </ul>
-    
-      <ul>
-        <li><strong>Quantity</strong></li>
-        <li>
-          <input type="button" id="minusbtn" value="-">
-          <label id="pantsQty">0</label>
-          <input type="button" id="plusbtn" value="+">
-        </li>
-        <li>
-          <input type="button" id="sh-minusbtn" value="-">
-          <label id="shirtsQty">0</label>
-          <input type="button" id="sh-plusbtn" value="+"></li>
-      </ul>
-    
-      <ul>
-        <li><strong>Unit Price</strong></li>
-        <li>$<span id="pants-price">40.99</span></li>
-        <li>$<span id="shirts-price">10.99</span></li>
-      </ul>
-    
-      <ul>
-        <li><strong>Extended Price</strong></li>
-        <li>$<span id="pants-total">0.00</span></li>
-        <li>$<span id="shirts-total">0.00</span></li>
-      </ul>
-  </form>
-  <input type="submit" value="Calculate" id="submit">
   <div id="subtotal"></div>
   <p>Have a promo code?</p>
   <button id="promo">Click to Enter</button>
-
   
   <script src="js/script.js"></script>
 </body>
